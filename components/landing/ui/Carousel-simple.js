@@ -1,4 +1,3 @@
-
 import * as React from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,19 +8,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import Autoplay from "embla-carousel-autoplay"
 
-export function CarouselSlides() {
+export default function CarouselSlides() {
   return (
-    <Carousel
-      className="w-full max-w-xs"
-      opts={{ align: "start", loop: true }}
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-    >
+    <Carousel className="w-full max-w-xs" plugins={[
+      Autoplay({
+        delay: 3000,
+      }),
+    ]}>
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>

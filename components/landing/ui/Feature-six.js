@@ -6,7 +6,7 @@ import Image from "next/image";
 import * as Craft from "@/components/craft";
 
 // Asset imports
-import CarouselSlides from "./Caoursel";
+import CarouselSlides from "./Carousel-simple";
 
 const FeatureSix = () => {
   return (
@@ -23,7 +23,7 @@ const FeatureSix = () => {
             turn texts dates.
           </p>
         </div>
-        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border col-span-1">
+        <div className="not-prose relative overflow-hidden rounded-lg col-span-1">
           <CarouselSlides />
         </div>
       </Craft.Container>

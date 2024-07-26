@@ -9,13 +9,13 @@ import * as Craft from "@/components/craft";
 
 // Asset imports
 import Placeholder from "@/public/placeholder.jpg";
-import CarouselSlides from "./Caoursel";
+import CarouselSlides from "./Carousel-simple";
 
 const FeatureThree = () => {
   return (
     <Craft.Section>
       <Craft.Container className="grid items-stretch md:grid-cols-3 md:gap-12 ">
-        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border col-span-1">
+        <div className="not-prose overflow-hidden rounded-lg col-span-1">
           <CarouselSlides />
         </div>
         <div className="flex flex-col gap-6 py-8 col-span-2">

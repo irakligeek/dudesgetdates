@@ -19,7 +19,7 @@ const FeatureTwo = () => {
           <Balancer className="">
             The ultimate goal of texting and communicating with a girl is to
             meet up in person, where real connections and attraction can happen.
-            Whether you're looking for a relationship, marriage or short-terms
+            Whether you're looking for a relationship, marriage or short-term
             fun, meeting in person is where things truly begin. 
             <br />You should aim
             to go on as many dates as possible until you meet someone special,
