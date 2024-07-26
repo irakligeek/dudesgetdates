@@ -1,7 +1,26 @@
+import { Main } from "@/components/craft";
+import Hero from "@/components/landing/ui/Hero";
+import FeatureOne from "@/components/landing/ui/Feature-one";
+import FeatureTwo from "@/components/landing/ui/Feature-two";
+import FeatureThree from "@/components/landing/ui/Feature-three";
+import FeatureFour from "@/components/landing/ui/Feature-four";
+import FeatureFive from "@/components/landing/ui/Feature-five";
+import FeatureSix from "@/components/landing/ui/Feature-six";
+import FeattureSeven from "@/components/landing/ui/Feature-seven";
+import FeatureEight from "@/components/landing/ui/Feature-eight";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>This is the main landin page</h1>
-    </main>
+    <Main>
+      <Hero />
+      <FeatureOne />
+      <FeatureTwo />
+      <FeatureThree />
+      <FeatureEight />
+      <FeatureSix />
+      <FeatureFive />
+      <FeattureSeven />
+      <FeatureFour />
+    </Main>
   );
 }
