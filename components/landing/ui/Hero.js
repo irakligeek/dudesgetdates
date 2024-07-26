@@ -11,7 +11,7 @@ import { Section, Container } from "@/components/craft";
 
 export default function Hero() {
   return (
-    <Section className="border-b bg-[radial-gradient(#d1d5db_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">      <Container>
+    <Section className="border-b bg-[radial-gradient(#d1d5db_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]">      <Container>
         <div className="flex flex-col items-center text-center">
           <h1 className="">
             <Balancer>

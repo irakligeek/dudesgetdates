@@ -6,8 +6,8 @@ export default function FeatureEight() {
         <h2 className="text-center flex flex-col gap-6 py-8">
           Keep The Conversation Smooth
         </h2>
-        <div className="grid items-stretch md:grid-cols-2">
-          <div className="flex flex-col border-b md:border-0 md:border-r items-center">
+        <div className="grid items-stretch md:grid-cols-2 gap-4 lg:gap-0">
+          <div className="flex flex-col md:border-0 lg:border-r items-center">
             <p className="text-xl text-center mb-4">Turn this...</p>
             <div className="px-4 py-8 text-sm w-[360px] bg-white rounded-3xl">
               <div className="space-y-4">
