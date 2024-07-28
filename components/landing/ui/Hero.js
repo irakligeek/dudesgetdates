@@ -3,15 +3,15 @@
 // import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
-import { ArrowDown, ArrowRight } from "lucide-react";
-// UI Components
+import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NewsletterForm from "./Newsletter-form";
 import { Section, Container } from "@/components/craft";
 
 export default function Hero() {
   return (
-    <Section className="border-b bg-[radial-gradient(#d1d5db_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]">      <Container>
+    <Section className="overflow-hidden relative bg-primary-foreground">
+      <Container className="z-10">
         <div className="flex flex-col items-center text-center">
           <h1 className="">
             <Balancer>
@@ -19,7 +19,7 @@ export default function Hero() {
               <span className="text-primary">Real Dates</span>
             </Balancer>
           </h1>
-          <h3 className="text-foreground text-base font-normal">
+          <h3 className="max-w-lg">
             <Balancer>
               Join the waitlist to turn your texting frustrations into exciting,
               romantic connections!

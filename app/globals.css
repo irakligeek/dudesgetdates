@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   :root {
     --background: 0 0% 98%; /* Off-White (#FAFAFA) */
     --foreground: 210 20% 20%; /* Charcoal (#333333) */
@@ -26,7 +25,7 @@
     --ring: 210 20% 20%; /* Charcoal (#333333) */
     --radius: 0.5rem;
   }
-  
+
   .dark {
     --background: 210 20% 20%; /* Charcoal (#333333) */
     --foreground: 0 0% 98%; /* Off-White (#FAFAFA) */
@@ -58,10 +57,10 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground font-body ;
+    @apply text-foreground font-body;
   }
   h1 {
-    @apply text-3xl font-black;
+    @apply text-4xl font-black;
   }
   h2 {
     @apply text-2xl font-semibold;
@@ -78,13 +77,48 @@
   h6 {
     @apply text-sm font-medium;
   }
-  p, span, div, a, li, ul, ol, blockquote, pre, code, table, tr, td, th, form, input, textarea{
+  p,
+  span,
+  div,
+  a,
+  li,
+  ul,
+  ol,
+  blockquote,
+  pre,
+  code,
+  table,
+  tr,
+  td,
+  th,
+  form,
+  input,
+  textarea {
     @apply font-body;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading mb-4;
   }
-  button{
-    @apply font-cta;  
+  button {
+    @apply font-cta;
   }
+  a {
+    @apply transition-opacity duration-300 ease-in-out;
+  }
+
+  a:hover {
+    @apply opacity-85 no-underline;
+  }
+}
+
+@layer utilities {
+  .custom-bg {
+    /* @apply bg-custom-bg bg-custom-pattern; */
+  }
+
 }

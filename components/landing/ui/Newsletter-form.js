@@ -39,7 +39,7 @@ export default function NewsletterForm() {
     console.log(values);
   }
   return (
-    <Form {...form}>
+    <Form {...form} classNam="bg-white">
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-2 text-left mb-6"

@@ -1,4 +1,6 @@
 import { Poppins, Open_Sans, Montserrat } from "next/font/google";
+import Navbar from "@/components/landing/ui/Navbar";
+import { UserProvider } from "./store/UserContext";
 
 import "./globals.css";
 
@@ -32,6 +34,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${openSans.variable} ${poppins.variable} ${montserrat.variable} scroll-smooth antialiased focus:scroll-auto`}
       >
+        <UserProvider>
+          <Navbar />
+        </UserProvider>
+
         {children}
       </body>
     </html>

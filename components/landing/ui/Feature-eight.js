@@ -1,10 +1,10 @@
 import { Section, Container } from "@/components/craft";
 export default function FeatureEight() {
   return (
-    <Section className=" bg-primary-foreground border-y ">
+    <Section className="bg-primary-foreground border-y ">
       <Container className="">
         <h2 className="text-center flex flex-col gap-6 py-8">
-          Keep The Conversation Smooth
+          Keep The Conversation Going
         </h2>
         <div className="grid items-stretch md:grid-cols-2 gap-4 lg:gap-0">
           <div className="flex flex-col md:border-0 lg:border-r items-center">

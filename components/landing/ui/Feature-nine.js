@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function FeatureNine() {
   return (
-    <Section className="border-t bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_70%,transparent_100%)]">
+    <Section className="border-t">
       <Container className="flex flex-col items-center gap-6 text-center">
         <h2 className="">How it works</h2>
         <div className="flex justify-center gap-12 flex-col md:flex-row">
