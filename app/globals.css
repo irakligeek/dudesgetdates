@@ -60,7 +60,7 @@
     @apply text-foreground font-body;
   }
   h1 {
-    @apply text-4xl font-black;
+    @apply text-5xl font-black;
   }
   h2 {
     @apply text-2xl font-semibold;

@@ -39,10 +39,10 @@ export default function NewsletterForm() {
     console.log(values);
   }
   return (
-    <Form {...form} classNam="bg-white">
+    <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-2 text-left mb-6"
+        className="space-y-2 text-left mb-6 max-w-xs overflow-hidden"
       >
         <FormField
           control={form.control}
@@ -52,7 +52,7 @@ export default function NewsletterForm() {
               <FormLabel className="sr-only">Email</FormLabel>
               <FormControl>
                 <Input
-                  className="md:w-96"
+                  className="w-full"
                   placeholder="Enter your email address"
                   {...field}
                 />

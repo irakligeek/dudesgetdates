@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white text-primary border-b">
+    <nav className="bg-white text-primary border">
       <div className="container mx-auto flex justify-between items-center py-3 px-6">
         <a href="/" className="text-2xl font-bold font-cta flex-none w-[220px]">
           Dudes Get Dates
