@@ -17,7 +17,7 @@ const FeatureSeven = () => {
           />
         </div>
         <div className="flex flex-col gap-6 py-8 md:col-span-2">
-          <h2 className="!my-0">Why DudesGetDates</h2>
+          <h2 className="!my-0">Why Dudes Get Dates</h2>
           <p className="font-normal leading-[1.7] text-muted-foreground text-lg">
             I understand how frustrating it can be for{" "}
             <b>dudes to score dates nowadays</b>, but with this{" "}

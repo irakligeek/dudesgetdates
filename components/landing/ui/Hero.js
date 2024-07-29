@@ -21,7 +21,7 @@ export default function Hero() {
               size="sm"
               variant="outline"
             >
-              <Link href="#the-problem">
+              <Link href="#the-dating-problem">
                 Show me how <ArrowDown className="ml-2 w-4" />
               </Link>
             </Button>

@@ -9,6 +9,7 @@ import FeatureSix from "@/components/landing/ui/Feature-six";
 import FeattureSeven from "@/components/landing/ui/Feature-seven";
 import FeatureEight from "@/components/landing/ui/Feature-eight";
 import FeatureNine from "@/components/landing/ui/Feature-nine";
+import Footer from "@/components/landing/ui/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <FeattureSeven />
       <FeatureNine />
       <FeatureFour />
+      <Footer />
     </Main>
   );
 }

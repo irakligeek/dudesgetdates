@@ -8,7 +8,7 @@ import Placeholder from "@/public/placeholder.jpg";
 
 const FeatureOne = () => {
   return (
-    <Section id="the-problem" className="border-t">
+    <Section id="the-dating-problem" className="border-t">
       <Container className="grid items-stretch md:grid-cols-2 md:gap-12">
         <div className="flex flex-col gap-6 py-8">
           <h2 className="!my-0">The Problem</h2>
