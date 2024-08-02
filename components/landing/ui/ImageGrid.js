@@ -8,7 +8,7 @@ export default function ImageGrid() {
           <Image
             src="https://via.placeholder.com/600x1000"
             alt="Image 1"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={600}
             className="w-full rounded shadow-md"
@@ -16,7 +16,7 @@ export default function ImageGrid() {
           <Image
             src="https://via.placeholder.com/600x1000"
             alt="Image 1"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={600}
             className="w-full rounded shadow-md"
@@ -27,7 +27,7 @@ export default function ImageGrid() {
           <Image
             src="https://via.placeholder.com/600x1000"
             alt="Image 1"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={600}
             className="w-full rounded shadow-md"
@@ -35,7 +35,7 @@ export default function ImageGrid() {
           <Image
             src="https://via.placeholder.com/600x1000"
             alt="Image 1"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={600}
             className="w-full rounded shadow-md"
@@ -46,7 +46,7 @@ export default function ImageGrid() {
           <Image
             src="https://via.placeholder.com/600x1000"
             alt="Image 1"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={600}
             className="w-full rounded shadow-md"
@@ -54,7 +54,7 @@ export default function ImageGrid() {
           <Image
             src="https://via.placeholder.com/600x1000"
             alt="Image 1"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={600}
             className="w-full rounded shadow-md"

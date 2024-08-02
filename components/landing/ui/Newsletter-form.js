@@ -1,8 +1,8 @@
-
-'use client';
+"use client";
 // Assets
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
 import {
   Form,
   FormControl,
@@ -15,16 +15,14 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
-
 const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
 });
 
-
 export default function NewsletterForm() {
-    // 1. Define your form.
+  // 1. Define your form.
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -34,10 +32,18 @@ export default function NewsletterForm() {
 
   // 2. Define a submit handler.
   function onSubmit(values) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+
+    fetch("/api/email-subscription", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }
+
   return (
     <Form {...form}>
       <form
