@@ -2,6 +2,7 @@
 // Assets
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Loader2 } from "lucide-react";
 import {
   Form,
   FormControl,
@@ -14,6 +15,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
 
 const formSchema = z.object({
   email: z.string().email({
@@ -22,7 +24,9 @@ const formSchema = z.object({
 });
 
 export default function NewsletterForm() {
+  
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
 
   // 1. Define your form.
   const form = useForm({
@@ -34,8 +38,9 @@ export default function NewsletterForm() {
 
   // 2. Define a submit handler.
   async function onSubmit(values) {
-    //set loading state 
-    
+    //set loading state
+    setLoading(true);
+
     const result = await fetch("/api/email-subscription", {
       method: "POST",
       headers: {
@@ -47,8 +52,9 @@ export default function NewsletterForm() {
     if (!result.ok) {
       toast({
         description: "Something went wrong, please try again later.",
-        className: "bg-red-500 text-white border-red-500",
+        className: "bg-red-50 text-red-800",
       });
+      setLoading(false);
       return;
     }
 
@@ -59,21 +65,22 @@ export default function NewsletterForm() {
       //error toaster
       toast({
         description: message,
-        className: "bg-red-500 text-white border-red-500",
+        className: "bg-red-50 text-red-800",
       });
     } else {
       toast({
         description: message,
-        className: "bg-green-500 text-white border-green-500",
+        className: "bg-green-50 text-green-800",
       });
     }
+    setLoading(false);
   }
 
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-2 text-left mb-6 max-w-xs overflow-hidden"
+        className="space-y-2 text-left mb-6 max-w-xs overflow-hidden px-1"
       >
         <FormField
           control={form.control}
@@ -92,8 +99,15 @@ export default function NewsletterForm() {
             </FormItem>
           )}
         />
-        <Button className="w-full" type="submit">
-          Sign me up!
+        <Button className="w-full" type="submit" disabled={loading}>
+          {loading ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Please wait
+            </>
+          ) : (
+            "Sign me up!"
+          )}
         </Button>
       </form>
     </Form>

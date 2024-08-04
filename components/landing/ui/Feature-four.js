@@ -6,7 +6,7 @@ import NewsletterForm from "./Newsletter-form";
 export function CTA() {
   // bg-teal text-offWhite
   return (
-    <Section className="bg-primary-foreground border-t">
+    <Section className="bg-primary-foreground border-t" id="newsletter-footer">
       <Container className="space-y-8">
         <h3 className="mb-2 text-3xl font-black">Add Me To The Waitlist</h3>
         <p className="text-lg text-muted-foreground !my-0">

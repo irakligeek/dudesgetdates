@@ -36,7 +36,7 @@ export default function Footer() {
             <p className="">
               ©{" "}
               <a href="https://dudesgetdates.com">Dudes Get Dates</a>.
-              All rights reserved. ${new Date().getFullYear()}-present.
+              All rights reserved. {new Date().getFullYear()}
             </p>
           </div>
         </Container>

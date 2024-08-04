@@ -9,7 +9,7 @@ export function FeatureFive() {
   return (
     <Section className=" bg-primary-foreground border-y">
       <Container className="flex flex-col items-center gap-6 text-center">
-        <h2 className="!my-0">DudesGetDates - Coming Soon</h2>
+        <h2 className="!my-0">Dudes Get Dates - Coming Soon</h2>
         <p className="text-lg text-muted-foreground">
           <Balancer>
             Using all this knowledge and experience, I am now developing bran{" "}
@@ -24,7 +24,7 @@ export function FeatureFive() {
         </p>
         <div className="not-prose mx-auto flex items-center gap-2">
           <Button className="w-fit" asChild>
-            <Link href="#">Sign me up!</Link>
+            <Link href="#newsletter-footer">Sign me up!</Link>
           </Button>
         </div>
       </Container>
