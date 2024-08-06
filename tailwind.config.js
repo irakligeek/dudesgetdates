@@ -87,6 +87,7 @@ module.exports = {
         heading: ["var(--font-montserrat)", "sans-serif"],
         body: ["var(--font-open-sans)", "sans-serif"],
         cta: ["var(--font-poppins)", "sans-serif"],
+        logo: ["var(--font-fredericka-the-great)", "cursive"],
       },
     },
   },

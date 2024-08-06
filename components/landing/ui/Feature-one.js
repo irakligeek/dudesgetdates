@@ -19,11 +19,14 @@ const FeatureOne = () => {
             Maybe the conversation started strong, but later she{" "}
             <b>ghosted you?</b>
             <br />
-            Or perhaps you met a girl in person, got her number, but then felt <b>lost on what to text and how to ask her out?</b>
+            Or perhaps you met a girl in person, got her number, but then felt{" "}
+            <b>lost on what to text and how to ask her out?</b>
             This is a common experience for many men, myself included.
             <br />
-            <b>Navigating today's dating scene is tough, especially for men and
-            getting dates can feel nearly impossible.</b>
+            <b>
+              Navigating today's dating scene is tough, especially for men and
+              getting dates can feel nearly impossible.
+            </b>
           </p>
         </div>
         <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border">

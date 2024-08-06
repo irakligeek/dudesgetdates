@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react"; // Importing menu and close icons
 import { useState, useContext } from "react";
 import { UserContext } from "@/app/store/UserContext";
+import Image from "next/image";
+import logo_one from "@/public/logos/logo-v1.png";
+import logo_two from "@/public/logos/logo-v2.png";
+import Balancer from "react-wrap-balancer";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +20,34 @@ export default function Navbar() {
   return (
     <nav className="bg-white text-primary border">
       <div className="container mx-auto flex justify-between items-center py-3 max-w-5xl px-6 sm:px-8">
-        <a href="/" className="text-2xl font-bold font-cta flex-none w-[220px]">
-          Dudes Get Dates
+        <a
+          href="/"
+          className="text-2xl font-bold font-cta flex-none flex items-center gap-4"
+        >
+          <Image
+            src={logo_one}
+            alt="Logo"
+            width={220}
+            height={40}
+            placeholder="blur"
+            quality={100}
+            className=" max-w-12"
+          />
+          {/* <Image
+            src={logo_two}
+            alt="Logo"
+            width={220}
+            height={40}
+            placeholder="blur"
+            quality={100}
+            className=" max-w-12"
+          /> */}
+          <Balancer>
+            <h1 className="font-logo text-2xl m-0 text-foreground tracking-normal">
+              Text Buddy
+            </h1>
+          </Balancer>
+          
         </a>
 
         <div
@@ -27,10 +57,14 @@ export default function Navbar() {
         >
           <ul className={`flex flex-col md:flex-row gap-4 mb-4 md:mb-0`}>
             <li className="m-0">
-              <a href="#features" className="font-bold text-primary">Features</a>
+              <a href="#features" className="font-bold text-primary">
+                Features
+              </a>
             </li>
             <li className="m-0">
-              <a href="#pricing" className="font-bold text-primary">Pricing</a>
+              <a href="#pricing" className="font-bold text-primary">
+                Pricing
+              </a>
             </li>
           </ul>
           <Button

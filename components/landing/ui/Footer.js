@@ -12,7 +12,7 @@ export default function Footer() {
         <Container className="grid gap-6">
           <div className="grid gap-6">
             <Link href="/" className="inline-block w-max">
-              <h3 className="sr-only">Dudes Get Dates</h3>
+              <h3 className="sr-only">Text Buddy</h3>
               {/* <Image
                 src={Logo}
                 alt="Logo"
@@ -24,8 +24,8 @@ export default function Footer() {
             </Link>
             <p>
               <Balancer>
-                Dudes Get Dates will save you time by putting your texting game on
-                autopilot. Text less date more!
+                TextBuddy will save you time by putting your texting game on
+                autopilot. Text less, date more!
               </Balancer>
             </p>
             {/* <div className="mb-6 flex flex-col gap-4 text-sm underline underline-offset-4 md:mb-0 md:flex-row">
@@ -35,7 +35,7 @@ export default function Footer() {
             </div> */}
             <p className="">
               ©{" "}
-              <a href="https://dudesgetdates.com">Dudes Get Dates</a>.
+              <a href="/">TextBuddy.co</a>.
               All rights reserved. {new Date().getFullYear()}
             </p>
           </div>

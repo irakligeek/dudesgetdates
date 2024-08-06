@@ -9,7 +9,7 @@ export function FeatureFive() {
   return (
     <Section className=" bg-primary-foreground border-y">
       <Container className="flex flex-col items-center gap-6 text-center">
-        <h2 className="!my-0">Dudes Get Dates - Coming Soon</h2>
+        <h2 className="!my-0">Text Buddy - Coming Soon</h2>
         <p className="text-lg text-muted-foreground">
           <Balancer>
             Using all this knowledge and experience, I am now developing bran{" "}
