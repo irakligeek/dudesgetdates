@@ -1,8 +1,7 @@
 import {
   Poppins,
   Open_Sans,
-  Montserrat,
-  Fredericka_the_Great,
+  Montserrat
 } from "next/font/google";
 import Navbar from "@/components/landing/ui/Navbar";
 import { UserProvider } from "./store/UserContext";
@@ -27,12 +26,7 @@ const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-montserrat",
 });
-const frederickaTheGreat = Fredericka_the_Great({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["400"],
-  variable: "--font-fredericka-the-great",
-});
+
 
 export const metadata = {
   title: "Dudes Get Dates",
@@ -43,7 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${openSans.variable} ${poppins.variable} ${montserrat.variable} ${frederickaTheGreat.variable} scroll-smooth antialiased focus:scroll-auto`}
+        className={`${openSans.variable} ${poppins.variable} ${montserrat.variable} scroll-smooth antialiased focus:scroll-auto`}
       >
         <UserProvider>
           <Navbar />

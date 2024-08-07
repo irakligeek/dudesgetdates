@@ -43,7 +43,7 @@ export default function Navbar() {
             className=" max-w-12"
           /> */}
           <Balancer>
-            <h1 className="font-logo text-2xl m-0 text-foreground tracking-normal">
+            <h1 className="text-2xl m-0 text-foreground tracking-normal">
               Text Buddy
             </h1>
           </Balancer>
