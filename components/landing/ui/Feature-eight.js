@@ -1,7 +1,8 @@
 import { Section, Container } from "@/components/craft";
+
 export default function FeatureEight() {
   return (
-    <Section className="bg-primary-foreground border-y ">
+    <Section className="bg-primary-foreground border-y">
       <Container className="">
         <h2 className="text-center flex flex-col gap-6 py-8">
           Keep The Conversation Going
@@ -11,6 +12,7 @@ export default function FeatureEight() {
             <p className="text-xl text-center mb-4">Turn this...</p>
             <div className="px-4 py-8 text-sm w-[360px] bg-white rounded-3xl">
               <div className="space-y-4">
+                <div className="text-center text-xs text-gray-500 mb-2">Yesterday 10:45 AM</div>
                 <div className="flex justify-start">
                   <div className="bg-gray-200 text-black py-2 px-3 rounded-full max-w-[260px]">
                     <p>Hey, how are you?</p>
@@ -22,9 +24,12 @@ export default function FeatureEight() {
                   </div>
                 </div>
                 <div className="flex justify-end">
-                  <div className="bg-blue-500 text-white py-2 px-3 rounded-full max-w-[260px]">
+                  <div className="bg-blue-500 text-white py-2 px-3 pb-2 rounded-full max-w-[260px]">
                     <p>Hey!</p>
                   </div>
+                </div>
+                <div className="flex justify-end">
+                  <div className="text-xs text-gray-500">Delivered</div>
                 </div>
               </div>
               <div className="mt-4 flex items-center">
@@ -40,8 +45,9 @@ export default function FeatureEight() {
             <p className="text-xl text-center mb-4">Into this...</p>
             <div className="px-4 py-8 text-sm w-[360px] bg-white rounded-3xl">
               <div className="space-y-4">
+                <div className="text-center text-xs text-gray-500 mb-2">Today 9:15 AM</div>
                 <div className="flex justify-start">
-                  <div className="bg-gray-200 text-black py-2 px-3 rounded-full max-w-[260px]s">
+                  <div className="bg-gray-200 text-black py-2 px-3 rounded-full max-w-[260px]">
                     <p>Hey, how are you?</p>
                   </div>
                 </div>

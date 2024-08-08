@@ -5,9 +5,9 @@ import { Menu, X } from "lucide-react"; // Importing menu and close icons
 import { useState, useContext } from "react";
 import { UserContext } from "@/app/store/UserContext";
 import Image from "next/image";
-import logo_one from "@/public/logos/logo-v1.png";
-import logo_two from "@/public/logos/logo-v2.png";
 import Balancer from "react-wrap-balancer";
+import logo_one_dark from "@/public/logos/logo-v1-dark.webp";
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,28 +25,14 @@ export default function Navbar() {
           className="text-2xl font-bold font-cta flex-none flex items-center gap-4"
         >
           <Image
-            src={logo_one}
+            src={logo_one_dark}
             alt="Logo"
-            width={220}
+            width={160}
             height={40}
             placeholder="blur"
             quality={100}
-            className=" max-w-12"
+            className=""
           />
-          {/* <Image
-            src={logo_two}
-            alt="Logo"
-            width={220}
-            height={40}
-            placeholder="blur"
-            quality={100}
-            className=" max-w-12"
-          /> */}
-          <Balancer>
-            <h1 className="text-2xl m-0 text-foreground tracking-normal">
-              Text Buddy
-            </h1>
-          </Balancer>
           
         </a>
 

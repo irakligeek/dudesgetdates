@@ -27,10 +27,10 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-
+// SEO stuff
 export const metadata = {
-  title: "Dudes Get Dates",
-  description: "Chat less date more",
+  title: "Text Buddy - Your Texting Assistant",
+  description: "Turn Boring Texts Into Real Dates",
 };
 
 export default function RootLayout({ children }) {

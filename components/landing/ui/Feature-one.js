@@ -4,36 +4,37 @@ import Image from "next/image";
 import { Section, Container } from "@/components/craft";
 
 // Asset imports
-import Placeholder from "@/public/placeholder.jpg";
+import bad_texting from "@/public/texting/bad-texting_2.png";
 
 const FeatureOne = () => {
   return (
     <Section id="the-dating-problem" className="border-t">
       <Container className="grid items-stretch md:grid-cols-2 md:gap-12">
-        <div className="flex flex-col gap-6 py-8">
-          <h2 className="!my-0">The Problem</h2>
+        <div className="flex flex-col gap-6">
+          <h2 className="!my-0">Men's Struggle with Modern Dating</h2>
           <p className="font-normal leading-[1.7] text-muted-foreground text-lg">
-            Have you ever matched with a <b>beautiful girl</b> on a dating app,
+            Have you ever matched with a beautiful girl on a dating app,
             only for it to go nowhere?
-            <br />
-            Maybe the conversation started strong, but later she{" "}
-            <b>ghosted you?</b>
-            <br />
-            Or perhaps you met a girl in person, got her number, but then felt{" "}
-            <b>lost on what to text and how to ask her out?</b>
-            This is a common experience for many men, myself included.
-            <br />
-            <b>
-              Navigating today's dating scene is tough, especially for men and
-              getting dates can feel nearly impossible.
-            </b>
+            Maybe the conversation started strong, but later she
+            ghosted you? 
+            Or perhaps you met a girl in person, got her number, 
+            but then felt lost on what to text and how to ask her out?
+            This is a common experience for many men.
+            Navigating today's dating scene is tough, especially for men and
+            getting dates can feel nearly impossible. Being a nice guy and 
+            "just be yourself" advice doesn't work. Then what is the solution?
           </p>
         </div>
-        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border">
+        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg">
           <Image
-            src={Placeholder}
+            src={bad_texting}
             alt="placeholder"
-            className="fill object-cover"
+            quality={100}
+            placeholder="blur"
+            alt="Bad Texting examples"
+            loading="lazy"
+            className="fill object-contain"
+            fill={true}
           />
         </div>
       </Container>
